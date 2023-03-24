@@ -1,0 +1,22 @@
+{
+    "name": "@app/server-dev",
+    "type": "module",
+    "scripts": {
+        "dev": "NODE_OPTIONS=\"--loader ts-node/esm\" webpack watch | pino-pretty"
+    },
+    "devDependencies": {
+        "@types/webpack-env": "^1.18.0",
+        "@types/webpack-node-externals": "^3",
+        "ts-loader": "^9.4.2",
+        "ts-node": "^10.9.1",
+        "webpack": "^5.76.3",
+        "webpack-cli": "^5.0.1",
+        "webpack-dev-server": "^4.13.1"
+    },
+    "dependencies": {
+        "pino": "^8.11.0",
+        "pino-pretty": "^10.0.0",
+        "run-script-webpack-plugin": "^0.1.1",
+        "webpack-node-externals": "^3.0.0"
+    }
+}

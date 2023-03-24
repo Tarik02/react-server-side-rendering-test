@@ -1,0 +1,22 @@
+{
+    "name": "@app/ui",
+    "type": "module",
+    "dependencies": {
+        "@emotion/react": "^11.10.6",
+        "@mantine/core": "^6.0.4",
+        "@mantine/hooks": "^6.0.4",
+        "@total-typescript/ts-reset": "^0.4.2",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "react-helmet-async": "^1.3.0",
+        "react-router-dom": "^6.9.0"
+    },
+    "devDependencies": {
+        "@pmmmwh/react-refresh-webpack-plugin": "^0.5.10",
+        "@types/react": "^18",
+        "@types/react-dom": "^18",
+        "react-refresh": "^0.14.0",
+        "react-refresh-typescript": "^2.0.8",
+        "type-fest": "^3.7.0"
+    }
+}

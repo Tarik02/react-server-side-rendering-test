@@ -1,0 +1,30 @@
+{
+    "name": "@app/server",
+    "type": "module",
+    "scripts": {
+        "dev": "nodemon -I --exec node --experimental-specifier-resolution=node --experimental-import-meta-resolve --loader ts-node/esm index-dev.tsx",
+        "start": "node --experimental-specifier-resolution=node --loader ts-node/esm index.tsx"
+    },
+    "dependencies": {
+        "@emotion/server": "^11.10.0",
+        "@fastify/static": "^6.9.0",
+        "@mantine/ssr": "^6.0.4",
+        "fastify": "^4.15.0",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "zod": "^3.21.4"
+    },
+    "devDependencies": {
+        "@types/react": "^18",
+        "@types/react-dom": "^18",
+        "fastify-webpack-hot": "^1.1.0",
+        "nodemon": "^2.0.22",
+        "ts-node": "^10.9.1"
+    },
+    "nodemonConfig": {
+        "watch": [
+            "../../tsconfig.json",
+            "../*"
+        ]
+    }
+}
